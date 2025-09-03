@@ -13,13 +13,13 @@ public class ValidInput {
             if (in.hasNextInt()) {
                 int value = in.nextInt();
                 if (value >= low && value <= high) {
-                    return value; // valid → return immediately
+                    return value; 
                 } else {
                     System.out.println(error);
                 }
             } else {
                 System.out.println(error);
-                in.next(); // throw away bad input
+                in.next(); 
             }
         }
     }
